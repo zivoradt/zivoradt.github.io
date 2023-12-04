@@ -113,21 +113,7 @@
 } */
 
 /* Icons */
-@font-face {
-  font-family: "slick";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://ingridkuhn.com/themes/aphrodite_bs5.3/css/../fonts/slick/fonts/slick.eot");
-  src: url("https://ingridkuhn.com/themes/aphrodite_bs5.3/css/../fonts/slick/fonts/slick.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://ingridkuhn.com/themes/aphrodite_bs5.3/css/../fonts/slick/slick.woff")
-      format("woff"),
-    url("https://ingridkuhn.com/themes/aphrodite_bs5.3/css/../fonts/slick/slick.ttf")
-      format("truetype"),
-    url("https://ingridkuhn.com/themes/aphrodite_bs5.3/css/./fonts/slick.svg#slick")
-      format("svg");
-}
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -174,7 +160,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: "Josefin Sans", serif;
   font-size: 20px;
   line-height: 1;
 
@@ -263,7 +249,7 @@
   opacity: 1;
 }
 .slick-dots li button:before {
-  font-family: "slick";
+  font-family: "Josefin Sans", serif;
   font-size: 24px;
 
   position: absolute;

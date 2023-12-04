@@ -738,7 +738,6 @@ progress {
 .img-fluid1 {
   max-width: 74%;
   height: auto;
-  border-radius: 87px;
 }
 .img-fluid {
   max-width: 100%;
@@ -1232,6 +1231,7 @@ progress {
   .col-md {
     flex: 1 0 0%;
   }
+
   .row-cols-md-auto > * {
     flex: 0 0 auto;
     width: auto;
@@ -3951,6 +3951,7 @@ fieldset:disabled .btn {
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
@@ -10370,6 +10371,9 @@ fieldset:disabled .btn {
 @media (min-width: 768px) {
   .float-md-start {
     float: left !important;
+  }
+  .pe-0 {
+    padding-right: 40px !important;
   }
   .float-md-end {
     float: right !important;

@@ -28,18 +28,18 @@ ol {
   font-weight: 400;
 }
 @font-face {
-  font-family: "Kenilla";
-  src: url("/fonts/bruliavariabletest-text.otf") format("opentype");
+  font-family: "Josefin Sans";
+  src: url("/fonts/Questrial-Regular.ttf") format("truetype");
   /* you can also use 'woff2', 'woff', 'truetype', etc. as appropriate */
 }
 
 body {
-  font-family: "Kenilla", sans-serif; /* Use your font in the CSS */
+  font-family: "Josefin Sans", sans-serif; /* Use your font in the CSS */
 }
 h1 {
   font-size: 4.5em;
   line-height: 1em;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   margin-bottom: 15px;
   letter-spacing: -0.5px;
   font-weight: 700;
@@ -51,13 +51,13 @@ h2 {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.1;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   font-size: 2.9em;
   margin-bottom: 20px;
   letter-spacing: -0.5px;
 }
 h3 {
-  font-family: "Kenilla", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2.4em;
   font-weight: 600;
   letter-spacing: -0.2px;
@@ -67,23 +67,43 @@ h3 {
 h3.no-margin-top {
   margin-top: 0px;
 }
+.p-index {
+  font-size: 18px;
+}
+.lan-active {
+  color: #d39b59 !important;
+}
+.nav-button {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+}
 h4 {
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   font-size: 1.7em;
   line-height: 1.3em;
   font-weight: 700;
   margin-bottom: 20px;
 }
+#firstbutton:hover {
+  color: #cecece;
+}
+#firstbutton1:hover {
+  color: #cecece;
+}
+#firstbutton2:hover {
+  color: #cecece;
+}
 h5 {
-  font-family: "Kenilla", serif;
-  font-size: 1.6em;
+  font-family: "Josefin Sans", serif;
+  font-size: 1.1em;
   line-height: 1.3;
   font-weight: 700;
   margin-bottom: 20px;
 }
 h6 {
   text-transform: uppercase;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   line-height: 1.3em;
   font-size: 1em;
   letter-spacing: 0.5px;
@@ -107,7 +127,7 @@ h6 {
   display: block;
 }
 .small-text {
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   font-size: 14px;
   line-height: 1.4em;
   letter-spacing: 0.5px;
@@ -130,7 +150,7 @@ a:focus {
   border-color: transparent;
 }
 .custom-link {
-  font-family: "Kenilla", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 20px;
   display: inline-block;
   padding: 0px 10px;
@@ -186,14 +206,14 @@ a:focus {
 }
 /* Navigation */
 .navbar-default .navbar-nav > li > a {
-  font-size: 14px;
+  font-size: 30px;
   color: #fff !important;
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
   transition: all 0.6s ease-in-out;
   letter-spacing: 0.5px;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   text-transform: uppercase;
   width: 100%;
 }
@@ -233,7 +253,7 @@ a:focus {
   white-space: nowrap;
   transition: all 0.6s ease-in-out;
   letter-spacing: 0.5px;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   text-transform: uppercase;
 }
 .dropdown-menu > li > a:focus,
@@ -400,7 +420,7 @@ a:focus {
 }
 .testimonial .content:before {
   content: "\f10d";
-  font-family: "Kenilla";
+  font-family: "Josefin Sans";
   font-weight: 900;
   display: inline-block;
   position: absolute;
@@ -612,11 +632,11 @@ a:focus {
 }
 .card-service.bg-1 {
   background-size: cover;
-  background-image: url("../img/close-up-woman-getting-lip-fillers.jpg");
+  background-image: url("../img/lip-color-correction.png");
 }
 .card-service.bg-2 {
   background-size: cover;
-  background-image: url("/img/services/service2.jpg");
+  background-image: url("/img/jamie-fenn-zSkHBXOjB0M-unsplash.jpg");
 }
 .card-service.bg-3 {
   background-size: cover;
@@ -624,15 +644,15 @@ a:focus {
 }
 .card-service.bg-4 {
   background-size: cover;
-  background-image: url("/img/services/service4.jpg");
+  background-image: url("/img/asian-chinese-female-beautician.png");
 }
 .card-service.bg-5 {
   background-size: cover;
-  background-image: url("/img/services/service5.jpg");
+  background-image: url("/img/laser-tatoo-removal-prep.png");
 }
 .card-service.bg-6 {
   background-size: cover;
-  background-image: url("/img/services/service6.jpg");
+  background-image: url("/img/Laser-Tattoo-Removal-shutterstoc.png");
 }
 #bg-about1 {
   background-size: cover;
@@ -648,12 +668,15 @@ a:focus {
 .call-to-action1 {
   background-size: cover;
   background-position: top;
-  background-image: url("/img/calltoaction1.jpg");
+  /* background-image: url("/img/calltoaction1.jpg"); */
 }
 #team {
   background-size: cover;
   background-position: top center;
   background-image: url("/img/team/teambg.jpg");
+}
+.p-service {
+  font-size: 0.9rem;
 }
 #about-home {
   background-size: cover;
@@ -806,21 +829,20 @@ a:focus {
 /* buttons */
 .btn {
   font-size: 14px;
-  letter-spacing: 0.3px;
+  letter-spacing: 4.3px;
   display: inline-block;
   text-align: center;
   border: 0;
   font-weight: 700;
   color: #fff;
   margin-top: 20px;
-  outline-offset: 3px;
+
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   padding: 10px 25px 7px 25px;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   text-transform: uppercase;
   border-radius: 0px;
-  box-shadow: 1px 1px 12px 6px rgb(255 255 255 / 13%);
 }
 #button-search.btn {
   padding: 10px 20px;
@@ -923,7 +945,7 @@ textarea.form-control {
 blockquote {
   padding: 20px;
   font-weight: 700;
-  font-family: "Kenilla", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 blockquote footer {
   padding: 0px;
@@ -945,7 +967,7 @@ blockquote:before {
   content: "\f10d";
   font-weight: 900;
   font-style: normal;
-  font-family: "Kenilla";
+  font-family: "Josefin Sans";
   font-size: 2em;
   opacity: 0.7;
 }
@@ -1026,7 +1048,7 @@ ul.custom li {
   padding: 5px 0px;
 }
 ul.custom li:before {
-  font-family: "Kenilla";
+  font-family: "Josefin Sans";
   content: "\f111";
   font-weight: 700;
   font-size: 10px;
@@ -1359,9 +1381,9 @@ ul.custom li:before {
 }
 /* pills /badges */
 .nav-pills .nav-link {
-  font-size: 0.9em;
+  font-size: 0.6em;
   padding-top: 13px;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   font-weight: 700;
   border-radius: 0;
   text-transform: uppercase;
@@ -1413,7 +1435,7 @@ a.badge:hover {
 /* breadcrumbs */
 .breadcrumb {
   color: #fff;
-  font-family: "Kenilla", serif;
+  font-family: "Josefin Sans", serif;
   font-weight: 700;
   background: transparent;
   text-transform: uppercase;
@@ -1437,7 +1459,7 @@ a.badge:hover {
   border-radius: 0px;
   border-color: #fff;
   font-weight: 700;
-  font-family: "Kenilla", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding: 10px;
 }
 .list-group-item.disabled {
@@ -1582,6 +1604,7 @@ button.list-group-item:hover {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
   .slideshow {
     height: 400px;
   }
@@ -1636,10 +1659,23 @@ button.list-group-item:hover {
     height: auto !important;
   }
 }
+
+.contact-section {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+.align {
+  text-align: center;
+}
 /* Large devices (large desktops, min 1200px ) */
 @media (min-width: 1200px) {
   .absolute-align {
     position: absolute;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 12px;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
     padding: 12px 12px 9px 12px;
@@ -1688,6 +1724,10 @@ button.list-group-item:hover {
     margin: auto;
   }
 }
+.new-div .nav-link:focus {
+  color: #d39b59 !important;
+}
+
 /* Large devices (large desktops, max 1200px) */
 @media (max-width: 1199px) {
   .navbar-default .navbar-nav > li > a {
@@ -1695,7 +1735,7 @@ button.list-group-item:hover {
     display: block;
   }
   .navbar-default .brand {
-    width: 85px;
+    width: 167px;
   }
   .navbar-default .dropend .dropdown-menu[data-bs-popper] {
     margin-left: 0;
@@ -1707,8 +1747,8 @@ button.list-group-item:hover {
     padding: 0.5rem;
   }
   .navbar-collapse {
-    max-height: 380px;
-    overflow-y: auto;
+    min-height: 50vh;
+    overflow-y: hidden;
   }
   .navbar-collapse::-webkit-scrollbar {
     width: 10px;
@@ -1795,5 +1835,8 @@ button.list-group-item:hover {
 @media (min-width: 1300px) {
   .inside-wrapper.container {
     width: 1000px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 12px;
   }
 }

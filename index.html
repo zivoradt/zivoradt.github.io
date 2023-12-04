@@ -51,7 +51,7 @@
     <!-- end demo_changer -->
     <!-- Preloader -->
     <div id="preloader">
-        <img src="img/ezgif.com-webp-to-jpg.jpg" alt="" class="preloader-logo img-fluid1 center-block">
+        <img src="img/logo/output-onlinepngtools.png" alt="" class="preloader-logo img-fluid1 center-block">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -68,7 +68,7 @@
                         <!-- Logo -->
                         <div class="brand justify-content-lg-start">
                             <a href="index.html">
-                                <img src="img/ezgif.com-webp-to-jpg.jpg" alt="" class="img-fluid1 center-block">
+                                <img src="img/logo/output-onlinepngtools.png" alt="" class="img-fluid1 center-block">
                             </a>
                         </div>
                         <!-- /logo -->
@@ -84,21 +84,30 @@
                         <!-- /hamburger menu -->
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
+
                                 <li class="nav-item">
-                                    <a class="nav-link home" href="index.html">Home</a>
+                                    <a class="nav-link home" data-translate="home" href="index.html"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" data-translate="services" href="#services"></a>
                                 </li>
 
                                 <li class="nav-item dropend">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                    <a class="nav-link" data-translate="gallery" href="gallery.html"></a>
 
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" data-translate="contact" href="#contact"></a>
                                 </li>
+
+                                <button onclick="switchLanguage('en')" id="firstbutton"
+                                    class="nav-link nav-button lan-active">EN</button>&nbsp;&nbsp;
+                                <button onclick="switchLanguage('it')" class="nav-link nav-button" id="firstbutton1"
+                                    href="#">IT</button>&nbsp;&nbsp;
+                                <button onclick="switchLanguage('sr')" class="nav-link nav-button" id="firstbutton2"
+                                    href="#">SR</button>
+
                                 <!--/nav-item -->
 
                                 <!--/nav-item -->
@@ -111,15 +120,18 @@
                 </div>
                 <!--/sidebar-nav -->
                 <div class="navbar-info d-none d-xl-block">
-                    <p class="small-text"><i class="fas fa-phone margin-icon"></i>13 456 890</p>
-                    <p class="small-text"><i class="fas fa-map-marker-alt margin-icon"></i>Street name 123
-                    </p>
+                    <a href="tel:+393278883876">
+                        <p class="small-text"><i class="fas fa-phone margin-icon"></i>+393278883876</p>
+                    </a>
+                    <!-- <p class="small-text"><i class="fas fa-map-marker-alt margin-icon"></i>Street name 123
+                    </p> -->
                     <!--Social icons -->
                     <div class="social-media ">
-                        <a href="#" title=""><i class="fab fa-facebook"></i></a>
-                        <a href="#" title=""><i class="fab fa-instagram"></i></a>
-                        <a href="#" title=""><i class="fab fa-yelp"></i></a>
-                        <a href="mailto:email@email.com" title=""><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/aleksandramickovic" title=""><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alexandra_kolar_81/" title=""><i
+                                class="fab fa-instagram"></i></a>
+
                     </div>
                 </div>
                 <!-- /navbar-info -->
@@ -136,7 +148,7 @@
                 <!--/ intro-home-->
                 <div class="inside-wrapper h-100 w-100 p-5 position-absolute top-0">
                     <div class="intro-header text-center p-5 top-50 position-relative ">
-                        <h1>Live life beautifully.</h1>
+                        <h1 data-translate="h1-index">Live life beautifully.</h1>
                         <!-- button -->
 
                     </div>
@@ -145,11 +157,10 @@
                 <!-- section -->
                 <section class="inside-wrapper container">
                     <div class="row">
-                        <div class="col-xl-6 offset-xl-3 text-center my-auto">
-                            <span class="sub-header">what we offer</span>
-                            <h2>Our Services</h2>
-                            <p class="mt-3">Fusce efficitur nulla vitae metus vehicula semper Proin a mattis ligula
-                                quisque sed dapibus eros.</p>
+                        <div class="col-xl-6 offset-xl-3 text-center my-auto" id="services">
+                            <span class="sub-header" data-translate="what-offer">What we offer</span>
+                            <h2 data-translate="our-services">Our Services</h2>
+
                         </div>
                         <!-- /col-xl -->
                     </div>
@@ -157,17 +168,7 @@
                     <!-- row -->
                     <div class="row g-lg-5 mt-5">
                         <!-- card -->
-                        <div class="col-lg-6 card-service-collumn">
-                            <div class="card-service bg-1 border-bottom">
-                                <a>
-                                    <div class="txt">
-                                        <h4>Lip Filler</h4>
-                                    </div>
-                                    <!-- link -->
-                                    <p class="more-link">more</p>
-                                </a>
-                            </div>
-                        </div>
+
                         <!-- /card ends -->
                         <!-- card -->
 
@@ -177,26 +178,70 @@
                             <div class="card-service bg-3 border-bottom">
                                 <a>
                                     <div class="txt">
-                                        <h4>Microblading & Eyebrows</h4>
+                                        <h4 data-translate="eyebrow">Permanent Eyebrow Makeup</h4>
                                     </div>
-                                    <!-- link -->
-                                    <p class="more-link">more</p>
+
                                 </a>
                             </div>
                         </div>
                         <!-- /card ends -->
                         <!-- card -->
+                        <div class="col-lg-6 card-service-collumn">
+                            <div class="card-service bg-2 border-bottom">
+                                <a>
+                                    <div class="txt">
+                                        <h4 data-translate="eyeliner">Permanent Eyeliner Makeup</h4>
+                                    </div>
 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 card-service-collumn">
+                            <div class="card-service bg-4 border-bottom">
+                                <a>
+                                    <div class="txt">
+                                        <h4 data-translate="carbon">Carbon Peel</h4>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 card-service-collumn">
+                            <div class="card-service bg-5 border-bottom">
+                                <a>
+                                    <div class="txt">
+                                        <h4 data-translate="laser-makeup">Laser Removal Of Permanent Makeup</h4>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 card-service-collumn">
+                            <div class="card-service bg-6 border-bottom">
+                                <a>
+                                    <div class="txt">
+                                        <h4 data-translate="laser">Laser Tattoo Removal</h4>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 card-service-collumn">
+                            <div class="card-service bg-1 border-bottom">
+                                <a>
+                                    <div class="txt">
+                                        <h4 data-translate="lips-makeup">Permanent Lips Makeup</h4>
+                                        <p data-translate="orient" class="p-service">Touch of Orient<br>* Wihouth
+                                            anesthetics</p>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
                         <!-- /card ends -->
                     </div>
                     <!-- /row -->
-                    <div class="row text-center mt-5">
-                        <div class="col-xl-12">
-                            <!-- button -->
-                            <a href="#" class="btn btn-primary  btn-lg">See all Services</a>
-                        </div>
-                        <!-- /col-xl -->
-                    </div>
+
                     <!-- /row -->
                 </section>
                 <!-- /section ends-->
@@ -204,31 +249,50 @@
                 <section class="container-fluid bg-light">
                     <div class="inside-wrapper container">
                         <div class="row">
-                            <div class="parallax-effect col-lg-8 d-none d-sm-block" style="">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <img src="img/384244025_6609588805743424_25941.png" class="para1 img-fluid"
-                                            alt="">
-                                    </div>
-                                    <!-- /col -->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <img src="img/386096786_6601314756570829_86406.png" class="para2 img-fluid"
-                                            alt="">
-                                    </div>
-                                    <!-- /col -->
-                                </div>
-                                <!-- /row -->
+                            <div class="col-lg-6  pe-0 my-auto">
+
+                                <h5 data-translate="Permanent-Lips-Makeup">
+                                    Permanent Lips Makeup
+                                </h5>
+                                <p data-translate="Permanent-Lips-Makeup-text" class="p-index"> Discover enduring allure
+                                    with our personalized permanent lip makeup,
+                                    elevating your beauty with precision and lasting
+                                    results.</p>
+
+                                <h5 data-translate="tatto-removal">
+                                    Laser Tattoo Removal
+                                </h5>
+                                <p data-translate="tatto-removal-text" class="p-index">Effortlessly say goodbye to
+                                    unwanted tattoos through our advanced
+                                    laser removal services, ensuring effective results
+                                    with minimal discomfort.</p>
+                                <h5 data-translate="tatto-removal-makeup">
+                                    Laser Removal Of Permanent Makeup
+                                </h5>
+                                <p data-translate="tatto-removal-makeup-text" class="p-index">Experience renewal as we
+                                    utilize state-of-the-art laser techniques to
+                                    erase outdated permanent makeup, leaving you with
+                                    a refreshed and revitalized look.</p>
+
                             </div>
                             <!-- /parallax -->
-                            <div class="col-lg-4  pe-0 my-auto">
-                                <span class="sub-header">hello there</span>
-                                <h4>
-                                    Enjoy the stay,<br> love the glow.
-                                </h4>
-                                <p> Here you will be greeted by our team of experts who are here to provide you with a
-                                    luxurious experience.</p>
-                                <!-- button -->
-                                <a href="about.html" class="btn btn-primary">About us</a>
+                            <div class="col-lg-6  pe-0 ">
+
+
+                                <h5 data-translate="carbon-peel">
+                                    Carbon Peel
+                                </h5>
+                                <p data-translate="carbon-peel-text" class="p-index">Revitalize your skin with our
+                                    SEO-optimized carbon peel treatment,
+                                    minimizing imperfections and unveiling a radiant,
+                                    youthful glow.</p>
+                                <h5 data-translate="eyeliner-makeup">
+                                    Permanent Eyeliner Makeup
+                                </h5>
+                                <p data-translate="eyeliner-makeup-text" class="p-index">levate your gaze with our
+                                    smudge-proof, long-lasting eyeliner. Our
+                                    SEO-friendly approach enhances your eyes and provides
+                                    a polished, timeless look.</p>
                             </div>
                             <!--/ col-lg-->
                         </div>
@@ -242,26 +306,28 @@
                     <div class="inside-wrapper container">
                         <div class="row">
                             <div class="col-xl-10 offset-xl-1 text-center">
-                                <span class="sub-header">information</span>
-                                <h2>About Our Stylist</h2>
+
+                                <h2 data-translate="stylist">About Our Stylist</h2>
                             </div>
                             <!-- /col-xl -->
                         </div>
                         <!-- /row -->
                         <div class="row mt-5">
                             <div class="col-lg-5 my-auto">
-                                <h4>
+                                <h4 data-translate="stylist-text1">
                                     Come to us for the best beauty products
                                 </h4>
-                                <p class="lead">Aenean ut ex leo. Nulla faucibus turpis sit amet turpis mattis
-                                    vestibulum et vel</p>
-                                <p>Turpis sit amet turpis mattis vestibulum et vel enim. Suspendisse aliquet elit
+
+                                <p data-translate="stylist-text3">Turpis sit amet turpis mattis vestibulum et vel enim.
+                                    Suspendisse aliquet elit
                                     praesent vel nisl in qua.Vivamus finibus lorem diam, sit amet facilisis tellus
                                     placerat</p>
-                                <p>Aliquam porttitor ut lectus eget imperdiet. Aenean ut ex leo. Nulla faucibus turpis
+                                <p data-translate="stylist-text4">Aliquam porttitor ut lectus eget imperdiet. Aenean ut
+                                    ex leo. Nulla faucibus turpis
                                     sit amet turpis mattis. </p>
                                 <!-- button -->
-                                <a href="#" class="btn btn-primary">More About us</a>
+                                <a data-translate="stylist-button" href="tel:+393278883876"
+                                    class="btn btn-primary">Contact Us</a>
                             </div>
                             <!--/ col-lg-->
                             <div class="col-lg-7 my-auto">
@@ -279,30 +345,30 @@
                 </section>
                 <!-- /section ends -->
                 <!-- Gallery-->
-                <div class="col-xl-12 mt-5 mb-5 border-top border-bottom">
+                <!-- <div class="col-xl-12 mt-5 mb-5 ">
                     <div id="lightbox-wrap" class="slider-centered lightbox mb-5 mt-5">
-                        <!-- image-->
+                        
                         <div class="lightbox">
                             <a href="img/387765613_6594585480577090_15213.png" title="You can add caption to pictures.">
                                 <img class="img-fluid color-outline" src="img/387765613_6594585480577090_15213.png"
                                     alt="">
                             </a>
                         </div>
-                        <!-- image-->
+                       
                         <div class="lightbox" style="width: 350px;">
                             <a href="img/392739871_6607697465932558_22903.png" title="You can add caption to pictures.">
                                 <img class="img-fluid color-outline" src="img/392739871_6607697465932558_22903.png"
                                     alt="">
                             </a>
                         </div>
-                        <!-- image-->
+                        
                         <div class="lightbox">
                             <a href="img/395413072_6656882491014055_87522.png" title="You can add caption to pictures.">
                                 <img class="img-fluid color-outline" src="img/395413072_6656882491014055_87522.png"
                                     alt="">
                             </a>
                         </div>
-                        <!-- image-->
+                        
                         <div class="lightbox">
                             <a href="img/398313742_6680164422019195_53882.png" title="You can add caption to pictures.">
                                 <img class="img-fluid color-outline" src="img/398313742_6680164422019195_53882.png"
@@ -310,79 +376,42 @@
                             </a>
                         </div>
                     </div>
-                    <!--/ slider-->
-                </div>
+                    
+                </div> -->
                 <!--/ col-xl-->
                 <!-- section  -->
 
                 <!-- /section ends -->
                 <!-- section -->
-                <section class="call-to-action1 container-fluid parallax">
-                    <div class="inside-wrapper container">
-                        <div class="row">
-                            <div class="card col-xl-7 text-center p-5 color-outline">
-                                <div class="card-body">
-                                    <h3>Make an Appointment</h3>
-                                    <p class="card-text mt-4">Fusce at nibh lacinia orci dictum euismod. Praesent vel
-                                        nisl in quam commodo tristique.</p>
-                                    <a href="#" class="btn btn-primary">Contact Us</a>
-                                </div>
-                                <!--/card-body-->
-                            </div>
-                            <!-- /card -->
-                        </div>
-                        <!-- /row -->
-                    </div>
-                    <!-- /inside-wrapper -->
-                </section>
+
                 <!-- /section ends -->
                 <!-- section -->
                 <section class="inside-wrapper container">
                     <div class="row h-10">
-                        <div class="col-xl-6">
-                            <span class="sub-header">contact</span>
-                            <h2>Get in Touch
+                        <div class="col-xl-12 align" id="contact">
+                            <span data-translate="contact-header" class="sub-header">contact</span>
+                            <h2 data-translate="contact-header1">Get in Touch
                             </h2>
-                            <p class="mb-5">We pay attention to every little detail to make your visit comfortable, so
-                                please get in touch to book the treatments that feel right for you.</p>
-                            <div class="col-md-12 text-lg-start text-center">
-                                <div class="contact-icon my-auto">
-                                    <div class="contact-icon-info">
-                                        <!---icon-->
-                                        <div class="top-icon">
-                                            <i class="fa fa- fa-envelope"></i>
-                                        </div>
-                                        <h6 class="mb-0">Email</h6>
-                                        <p class="mb-0">Email address: <a
-                                                href="mailto:email@yoursite.com">email@yoursite.com</a></p>
-                                    </div>
-                                </div>
-                                <!-- /contact-icon-->
-                            </div>
+
+
+                            <!-- /col-md-->
+
                             <!-- /col-md-->
                             <div class="col-md-12 mt-4 my-auto text-lg-start text-center">
-                                <div class="contact-icon my-auto">
-                                    <div class="contact-icon-info">
-                                        <!---icon-->
-                                        <div class="top-icon">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <h6 class="mb-0">Phone</h6>
-                                        <p class="mb-0">Number: <a href="tel:1234-5678">1234-5678</a></p>
-                                    </div>
-                                </div>
-                                <!-- /contact-icon-->
-                            </div>
-                            <!-- /col-md-->
-                            <div class="col-md-12 mt-4 my-auto text-lg-start text-center">
-                                <div class="contact-icon my-auto">
-                                    <div class="contact-icon-info ">
-                                        <!---icon-->
-                                        <div class="top-icon">
-                                            <i class="fa fa-map-marker"></i>
-                                        </div>
-                                        <h6 class="mb-0">Address</h6>
-                                        <p class="mb-0">Address</p>
+                                <div class="social-media contact-section">
+                                    <p data-translate="contact-text1"> You can find us on two location:<br> <span
+                                            style="color: #d39b59 !important;">Veneto, Italy</span> and <span
+                                            style="color: #d39b59 !important;">Leskovac, Serbia</span></p>
+                                    <a href="tel:+393278883876" title=""><i style="font-size: 17px;"
+                                            class="fa fa-phone"></i>+393278883876</a>
+                                    <a href="#" title=""><i style="font-size: 17px;"
+                                            class="fa fa-envelope"></i>aleksandramickovic@gmail.com</a>
+
+                                    <div>
+                                        <a href="https://www.instagram.com/alexandra_kolar_81/" title=""><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/aleksandramickovic" title=""><i
+                                                class="fab fa-facebook"></i></a>
                                     </div>
                                 </div>
                                 <!-- /contact-icon-->
@@ -390,48 +419,7 @@
                             <!-- /col-md-->
                         </div>
                         <!-- /col-xl-->
-                        <div class="offset-xl-1 col-xl-5 res-mt-5 my-auto">
-                            <h4 class="mb-5">Send us a Message</h4>
-                            <!-- contact info -->
-                            <div class="contact-info">
-                                <div id="error-message"></div>
-                                <!-- Form Starts -->
-                                <div id="contact_form">
-                                    <div class="form-group">
-                                        <!-- row -->
-                                        <div class="col-md-12">
-                                            <div class="col-md-12">
-                                                <input type="text" name="name" class="form-control input-field"
-                                                    placeholder="Name*" required="">
-                                            </div>
-                                            <div class="col-md-12 mt-4">
-                                                <input type="email" name="email" class="form-control input-field"
-                                                    placeholder="Email*" required="">
-                                            </div>
-                                            <div class="col-md-12 mt-4">
-                                                <input type="tel" name="phone" class="form-control input-field"
-                                                    placeholder="Phone">
-                                            </div>
-                                            <div class="col-md-12 mt-4">
-                                                <input type="text" name="subject" class="form-control input-field"
-                                                    placeholder="Subject">
-                                            </div>
-                                            <div class="col-md-12 mt-4">
-                                                <textarea name="message" id="message" placeholder="Your Message*"
-                                                    class="textarea-field form-control" rows="3" required=""></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- /row -->
-                                        <button type="submit" id="submit_btn" value="Submit"
-                                            class="btn btn-primary mt-4">Send message</button>
-                                    </div>
-                                    <!-- Contact results -->
-                                    <div id="contact_results"></div>
-                                </div>
-                                <!-- /contact-form -->
-                            </div>
-                            <!-- /contact-info -->
-                        </div>
+
                         <!-- /offset-col-->
                     </div>
                     <!-- /row-->
@@ -473,7 +461,7 @@
     <!-- All Scripts & Plugins -->
 
 
-
+    <script src="/js/languageSwitcher.js"></script>
     <script src="js/contact.js"></script>
 </body>
 

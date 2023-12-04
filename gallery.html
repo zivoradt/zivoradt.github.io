@@ -48,7 +48,7 @@
     <!-- end demo_changer -->
     <!-- Preloader -->
     <div id="preloader">
-        <img src="img/ezgif.com-webp-to-jpg.jpg" alt="" class="preloader-logo img-fluid1 center-block">
+        <img src="img/logo/output-onlinepngtools.png" alt="" class="preloader-logo img-fluid1 center-block">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -65,7 +65,7 @@
                         <!-- Logo -->
                         <div class="brand justify-content-lg-start">
                             <a href="index.html">
-                                <img src="img/ezgif.com-webp-to-jpg.jpg" alt="" class="img-fluid1 center-block">
+                                <img src="img/logo/output-onlinepngtools.png" alt="" class="img-fluid1 center-block">
                             </a>
                         </div>
                         <!-- /logo -->
@@ -81,21 +81,30 @@
                         <!-- /hamburger menu -->
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
+
                                 <li class="nav-item">
-                                    <a class="nav-link home" href="index.html">Home</a>
+                                    <a class="nav-link home" data-translate="home" href="index.html"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" data-translate="services" href="index.html#services"></a>
                                 </li>
 
                                 <li class="nav-item dropend">
-                                    <a class="nav-link" href="#">Gallery</a>
+                                    <a class="nav-link" data-translate="gallery" href="gallery.html"></a>
 
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" data-translate="contact" href="#contact"></a>
                                 </li>
+
+                                <button onclick="switchLanguage('en')" id="firstbutton"
+                                    class="nav-link nav-button lan-active">EN</button>&nbsp;&nbsp;
+                                <button onclick="switchLanguage('it')" class="nav-link nav-button" id="firstbutton1"
+                                    href="#">IT</button>&nbsp;&nbsp;
+                                <button onclick="switchLanguage('sr')" class="nav-link nav-button" id="firstbutton2"
+                                    href="#">SR</button>
+
                                 <!--/nav-item -->
 
                                 <!--/nav-item -->
@@ -108,15 +117,18 @@
                 </div>
                 <!--/sidebar-nav -->
                 <div class="navbar-info d-none d-xl-block">
-                    <p class="small-text"><i class="fas fa-phone margin-icon"></i>13 456 890</p>
-                    <p class="small-text"><i class="fas fa-map-marker-alt margin-icon"></i>Street name 123
-                    </p>
+                    <a href="tel:+393278883876">
+                        <p class="small-text"><i class="fas fa-phone margin-icon"></i>+393278883876</p>
+                    </a>
+                    <!-- <p class="small-text"><i class="fas fa-map-marker-alt margin-icon"></i>Street name 123
+                            </p> -->
                     <!--Social icons -->
                     <div class="social-media ">
-                        <a href="#" title=""><i class="fab fa-facebook"></i></a>
-                        <a href="#" title=""><i class="fab fa-instagram"></i></a>
-                        <a href="#" title=""><i class="fab fa-yelp"></i></a>
-                        <a href="mailto:email@email.com" title=""><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/aleksandramickovic" title=""><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alexandra_kolar_81/" title=""><i
+                                class="fab fa-instagram"></i></a>
+
                     </div>
                 </div>
                 <!-- /navbar-info -->
@@ -131,12 +143,13 @@
                 <!-- page header -->
                 <div class="page-header bg-overlay1 container-fluid border-bottom">
                     <div class="col-xl-6 offset-xl-3">
-                        <h1>Gallery</h1>
+                        <h1 data-translate="gallery">Gallery</h1>
                         <!-- /breadcrumb -->
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                                <li class="breadcrumb-item"><a href="index.html" data-translate="home">Home</a></li>
+                                <li class="breadcrumb-item active" data-translate="gallery" aria-current="page">Gallery
+                                </li>
                             </ol>
                         </nav>
                         <!-- /breadcrumb -->
@@ -148,11 +161,12 @@
                     <section class="inside-wrapper container pb-0">
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2 text-center">
-                                <span class="sub-header res-mt-5">what we do</span>
-                                <h2>
+                                <span class="sub-header res-mt-5" data-translate="gallery-text1">what we do</span>
+                                <h2 data-translate="gallery-h2">
                                     Discover Our Portfolio
                                 </h2>
-                                <p class="mt-4">Fusce efficitur nulla vitae metus vehicula semper Proin a mattis ligula
+                                <p data-translate="gallery-text2" class="mt-4">Fusce efficitur nulla vitae metus
+                                    vehicula semper Proin a mattis ligula
                                     quis proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus
                                     sodales A hendrerit vel ac dia urabitur varius metus u ipsum.</p>
                             </div>
@@ -165,18 +179,43 @@
                     <div id="gallery" class="container-fluid p-0 mt-5 mb-5">
                         <!-- centered Gallery navigation -->
                         <div class="text-center">
-                            <ul class="nav nav-pills justify-content-center cat mb-5" id="gallerytab">
+                            <ul class="nav nav-pills cat mb-5" id="gallerytab">
                                 <li class="nav-item m-2">
-                                    <a class="nav-link active" aria-current="page" href="#" data-toggle="tab"
-                                        data-filter="*">All</a>
+                                    <a class="nav-link active" data-translate="all" aria-current="page" href="#"
+                                        data-toggle="tab" data-filter="*">All</a>
                                 </li>
                                 <li class="nav-item m-2">
-                                    <a class="nav-link" href="#" data-toggle="tab" data-filter=".option1">Lip Filler</a>
+                                    <a class="nav-link" data-translate="eyebrow" href="#" data-toggle="tab"
+                                        data-filter=".option2">Permanent
+                                        Eyebrow Makeup</a>
                                 </li>
                                 <li class="nav-item m-2">
-                                    <a class="nav-link" href="#" data-toggle="tab" data-filter=".option2">Microblading &
-                                        Eyebrows</a>
+                                    <a class="nav-link" href="#" data-translate="lips-makeup" data-toggle="tab"
+                                        data-filter=".option1">Permanent Lips
+                                        Makeup</a>
                                 </li>
+
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#" data-translate="eyeliner-makeup" data-toggle="tab"
+                                        data-filter=".option1">Permanent
+                                        Eyeliner Makeup</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#" data-translate="carbon" data-toggle="tab"
+                                        data-filter=".option1">Carbon
+                                        Peel</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#" data-translate="laser-makeup" data-toggle="tab"
+                                        data-filter=".option1">Laser Removal
+                                        Of Permanent Makeup</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#" data-translate="laser" data-toggle="tab"
+                                        data-filter=".option1">Laser Tattoo
+                                        Removal</a>
+                                </li>
+
 
                             </ul>
                         </div>
@@ -299,6 +338,45 @@
                         </div>
                         <!-- /gallery-isotope-->
                     </div>
+
+                    <section class="inside-wrapper container">
+                        <div class="row h-10">
+                            <div class="col-xl-6 align" id="contact">
+                                <span class="sub-header">contact</span>
+                                <h2>Get in Touch
+                                </h2>
+                                <p class="mb-5">Here you can find contact details</p>
+
+                                <!-- /col-md-->
+
+                                <!-- /col-md-->
+                                <div class="col-md-12 mt-4 my-auto text-lg-start text-center">
+                                    <div class="social-media contact-section">
+                                        <p> You can find us on two location: <span
+                                                style="color: #d39b59 !important;">Veneto, Italy</span>
+                                            and <span style="color: #d39b59 !important;">Leskovac, Serbia</span></p>
+                                        <a href="#" title=""><i style="font-size: 17px;"
+                                                class="fa fa-phone"></i>+393278883876</a>
+                                        <a href="#" title=""><i style="font-size: 17px;"
+                                                class="fa fa-envelope"></i>aleksandramickovic@gmail.com</a>
+
+                                        <div>
+                                            <a href="https://www.instagram.com/alexandra_kolar_81/" title=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/aleksandramickovic" title=""><i
+                                                    class="fab fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- /contact-icon-->
+                                </div>
+                                <!-- /col-md-->
+                            </div>
+                            <!-- /col-xl-->
+
+                            <!-- /offset-col-->
+                        </div>
+                        <!-- /row-->
+                    </section>
                     <!-- /section ends -->
                     <!-- Credits -->
                     <div class="credits text-center p-3 pt-0">
@@ -324,7 +402,7 @@
 
     <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="vendor/bootstrap/jquery.min.js"></script>
-
+    <script src="/js/languageSwitcher.js"></script>
     <!-- Custom Js -->
     <script src="js/custom.js"></script>
     <script src="js/plugins.js"></script>

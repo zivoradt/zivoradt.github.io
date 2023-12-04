@@ -68,7 +68,6 @@ button.list-group-item:hover,
   background-color: #d39b59 !important;
 }
 span.sub-header,
-.nav-link,
 .btn-info:hover,
 .btn-info:focus,
 .text-info,
@@ -151,7 +150,7 @@ ul.custom li:before,
 .table-striped > tbody > tr:nth-of-type(odd),
 .list-group-item,
 .bg-light {
-  background-color: rgb(211 155 90 / 16%) !important;
+  background-color: #000000 !important;
 }
 
 /* Black */
@@ -233,7 +232,6 @@ body,
 .table-striped > tbody > tr:nth-of-type(odd):hover,
 .table-hover > tbody > tr:hover,
 button.btn-primary:hover,
-.nav-link:focus,
 a.btn-secondary .btn-primary:hover,
 .btn-primary:focus,
 .btn-secondary:focus,
