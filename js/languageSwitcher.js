@@ -1,5 +1,5 @@
 // script.js
-const defaultLanguage = 'en';
+const defaultLanguage = 'sr';
 let currentLanguage = defaultLanguage;
 
 function translate() {

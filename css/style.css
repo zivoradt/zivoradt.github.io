@@ -347,6 +347,9 @@ a:focus {
   border-bottom: 1px solid;
   transition: all ease-in-out 0.7s;
 }
+.border-bottom1 {
+  border-bottom: 1px solid white;
+}
 .team-style1 .img-box img {
   transition: all ease-in-out 0.7s;
 }
