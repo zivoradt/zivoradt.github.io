@@ -1,6 +1,6 @@
 // script.js
 const defaultLanguage = 'sr';
-let currentLanguage = defaultLanguage;
+let currentLanguage = localStorage.getItem('selectedLanguage') || defaultLanguage;
 
 function translate() {
     fetch(`translations-${currentLanguage}.json`)
@@ -15,7 +15,11 @@ function translate() {
 }
 
 // Call translate() when the page loads
-document.addEventListener('DOMContentLoaded', translate);
+document.addEventListener('DOMContentLoaded', () => {
+    translate();
+    // Set the active language button on page load
+    document.querySelector(`button[onclick="switchLanguage('${currentLanguage}')"`).classList.add('lan-active');
+});
 
 // Example: Switch language
 function switchLanguage(language) {
@@ -27,8 +31,11 @@ function switchLanguage(language) {
     // Add 'lan-active' class to the clicked button
     document.querySelector(`button[onclick="switchLanguage('${language}')"`).classList.add('lan-active');
 
-    // Set the current language and trigger translation
+    // Set the current language and store it in local storage
     currentLanguage = language;
+    localStorage.setItem('selectedLanguage', currentLanguage);
+
+    // Trigger translation
     translate();
 }
 
@@ -46,7 +53,3 @@ function extractTranslationsFromHTML() {
 
     return translations;
 }
-
-
-
-
