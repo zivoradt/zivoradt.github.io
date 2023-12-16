@@ -83,7 +83,7 @@ Version: 1.1
 			});
 			introhome.set(".intro-header", {opacity: 0})
 			.to("#intro-home", {autoAlpha: 1,duration: 1})
-			.to("#intro-home", {autoAlpha: 0.7,duration: 1})
+			.to("#intro-home", {autoAlpha: 0.89,duration: 1})
 			.to(".intro-header", {yPercent: -50,opacity: 1,duration: 2})
 			.to(".intro-header", {
 				scrollTrigger: {
