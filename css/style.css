@@ -694,7 +694,7 @@ a:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("/img/320624184_3293005674291897_46816-removebg.png");
+  background-image: url("../IMG_3131-removebg.png");
 }
 .block-reveal {
   position: absolute;
@@ -1526,6 +1526,10 @@ button.list-group-item:hover {
 @media (max-width: 544px) {
   .spinner {
     left: 40%;
+  }
+  #intro-home {
+    background-size: 144%;
+    transform: translate(12px, 17px);
   }
   .btn,
   .btn-primary {

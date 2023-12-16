@@ -94,7 +94,7 @@ Version: 1.1
 					toggleActions: "play none none reverse",
 				},
 				css: {
-					scale: 1.4,opacity: 0
+					scale: 1.4,opacity: 0,transform: "translate(18px, 17px)"
 				},
 				ease: 'slow'
 			})
