@@ -138,6 +138,11 @@ ul.custom li:before,
 .btn-default:hover {
   border-color: #d39b59 !important;
 }
+.service-text {
+  letter-spacing: 2px;
+
+  font-size: 1.7rem;
+}
 .btn,
 .color-outline,
 .feature:hover {
