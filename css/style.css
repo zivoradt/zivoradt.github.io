@@ -613,6 +613,12 @@ a:focus {
 .box-effect {
   visibility: hidden;
 }
+.img-home {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-left: 7px;
+}
 /* backgrounds */
 .boxbg1,
 .boxbg2,
@@ -639,7 +645,7 @@ a:focus {
 }
 .card-service.bg-2 {
   background-size: cover;
-  background-image: url("/img/jamie-fenn-zSkHBXOjB0M-unsplash.jpg");
+  background-image: url("/img/istockphoto-1447978149-1024x1024\ 1.png");
 }
 .card-service.bg-3 {
   background-size: cover;
