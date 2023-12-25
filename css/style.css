@@ -32,20 +32,28 @@ ol {
   src: url("/fonts/Questrial-Regular.ttf") format("truetype");
   /* you can also use 'woff2', 'woff', 'truetype', etc. as appropriate */
 }
+@font-face {
+  font-family: "Safira March";
+  src: url("/fonts/Safira\ March.otf") format("opentype");
+  /* you can also use 'woff2', 'woff', 'truetype', etc. as appropriate */
+}
 
 body {
   font-family: "Josefin Sans", sans-serif; /* Use your font in the CSS */
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 2.5em;
   line-height: 1em;
-  font-family: "Josefin Sans", serif;
+  font-family: "Safira March";
   margin-bottom: 15px;
   letter-spacing: -0.5px;
-  font-weight: 700;
+  font-weight: 100;
 }
 h1 span {
   font-weight: 400;
+}
+.h1home {
+  font-family: "Safira March";
 }
 h2 {
   margin-bottom: 20px;
@@ -1621,6 +1629,8 @@ button.list-group-item:hover {
   }
   /* typography */
   h1 {
+    line-height: 1.6;
+    letter-spacing: 1px;
     font-size: 2.4em;
   }
   h2 {
