@@ -1251,6 +1251,12 @@ ul.custom li:before {
   z-index: 9;
   text-align: center;
 }
+.block-reveal {
+  text-align: center;
+}
+.wrapper-reveal {
+  text-align: center;
+}
 .tz-gallery .title p {
   margin: 0px;
   line-height: 20px;
