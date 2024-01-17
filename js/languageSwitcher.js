@@ -18,7 +18,8 @@ function translate() {
 document.addEventListener('DOMContentLoaded', () => {
     translate();
     // Set the active language button on page load
-    document.querySelector(`button[onclick="switchLanguage('${currentLanguage}')"`).classList.add('lan-active');
+    document.querySelector(`button[onclick="switchLanguage('${currentLanguage}')"]`).classList.add('lan-active');
+
 });
 
 // Example: Switch language

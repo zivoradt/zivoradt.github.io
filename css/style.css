@@ -1014,7 +1014,7 @@ blockquote:before {
   font-size: 1.1em;
   padding: 1em 1.5em;
   border-radius: 0;
-  border: 0;
+
   margin: 0 0.5px;
 }
 .nav-tabs .nav-link.active,
@@ -1702,6 +1702,9 @@ button.list-group-item:hover {
   .absolute-align {
     position: absolute;
   }
+  .margin-nav {
+    margin-top: 2rem;
+  }
   .img-home {
     height: 30px;
     width: 30px;
@@ -1767,8 +1770,8 @@ button.list-group-item:hover {
     display: block;
   }
   .img-home {
-    width: 19px;
-    height: 19px;
+    width: 25px;
+    height: 25px;
   }
   .navbar-default .brand {
     width: 167px;
